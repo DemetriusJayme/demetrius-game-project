@@ -1,0 +1,8 @@
+// index.js
+// ...
+
+theCatDiv.style.backgroundColor = 'red';
+theCatDiv.style.border = '2px green solid';
+theCatDiv.style.fontSize = '50px';
+theCatDiv.style.marginTop = '30px';
+theCatDiv.style.paddingBottom = '30px';
