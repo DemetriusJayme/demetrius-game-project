@@ -1,8 +1,59 @@
-// index.js
-// ...
+.heroimage {
+  background-image: url("../images/par_impar.png");
+  height: 50vh;
+  /* width: 200vh; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-theCatDiv.style.backgroundColor = 'red';
-theCatDiv.style.border = '2px green solid';
-theCatDiv.style.fontSize = '50px';
-theCatDiv.style.marginTop = '30px';
-theCatDiv.style.paddingBottom = '30px';
+.umdedoimage {
+  background-image: url("../images/mao_um_dedo.png");
+  height: 30vh;
+  width: 25vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doisdedosimage {
+  background-image: url("../images/mao_dois_dedos.png");
+  height: 30vh;
+  width: 25vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tresdedosimage {
+  background-image: url("../images/mao_tres_dedos.png");
+  height: 30vh;
+  width: 25vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quatrodedosimage {
+  background-image: url("../images/mao_quatro_dedos.png");
+  height: 30vh;
+  width: 25vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cincodedosimage {
+  background-image: url("../images/mao_cinco_dedos.png");
+  height: 30vh;
+  width: 25vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,17 +1,50 @@
-<html>
+<html lang="en">
   <head>
-    <title>DOM Intro</title>
-  </head>
-  <body>
-    <!-- include js in the end of the body to make sure 
-    the DOM is already loaded before you want to make updates in it-->
-    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Linkando com o arquivo CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>PAR/IMPAR</title>
+  </head>
+
+  <body>
+    <div class="heroimage"></div>
     <h1>Par ou Impar</h1>
-    <div id="cat"></div>
-    <div class="mouse"></div>
-    <div class="mouse"></div>
-    <div class="mouse"></div>
-    <div class="hello"></div>
+
+    <!-- A div com o id de "inicio" será mostrada quando o jogo for carregado -->
+    <div id="inicio" class="inicio">
+      <h1>Mostrar a imagem da mao com os dedos</h1>
+      <div class="umdedoimage"></div>
+      <div class="doisdedosimage"></div>
+      <div class="tresdedosimage"></div>
+      <div class="quatrodedosimage"></div>
+      <div class="doisdedosimage"></div>
+      <div>
+        <label
+          >Player 1 - Digite a qtde de dedos (ou clique na figura desejada)
+        </label>
+        <input type="text1" />
+      </div>
+      <div>-</div>
+      <div>-</div>
+      <div>
+        <label
+          >Player 2 - Digite a qtde de dedos (ou clique na figura desejada)
+        </label>
+        <input type="text2" />
+      </div>
+      <div>-</div>
+      <div>-</div>
+      <div>
+        <center>
+          <button heigth="100px;" width="50px;" id="btnStart">Jogar!</button>
+        </center>
+      </div>
+    </div>
+
+    <!-- Linkando com o arquivo Java Script -->
+    <script src="index.js"></script>
   </body>
 </html>
