@@ -1,5 +1,6 @@
 // index.js
 
+//Verifica a conexao com JS
 console.log("JS connected"); // <== just a quick check up to make sure js doc is connected properly
 
 btnPar.onclick = () => {
@@ -14,70 +15,58 @@ btnImpar.onclick = () => {
 
 //Calcula o resultado do jogo
 function resultGame(flag) {
-  console.log("entrei na funcao");
-  console.log(flag);
-
+  //Declarando as constantes
   const qtdeDedosFirst = document.getElementById("inputQtdeFirst").value;
   const qtdeDedosSecond = document.getElementById("inputQtdeSecond").value;
   const total = parseInt(qtdeDedosFirst) + parseInt(qtdeDedosSecond);
 
   console.log(qtdeDedosFirst);
   console.log(qtdeDedosSecond);
-
-  //const total = sum(qtdeDedosFirst.value, qtdeDedosSecond.value);
-
   console.log(total);
 
+  //Verifica se e par ou impar
   if (total % 2 == 0) {
     console.log("eh par");
+    opcFinal = "par";
   } else {
     console.log("eh impar");
+    opcFinal = "impar";
   }
+
+  //Verifica opcao do Jogador 1 e Jogador 2
+  if (flag === "par") {
+    opcJog1 = "par";
+    opcJog2 = "impar";
+  } else {
+    opcJog1 = "impar";
+    opcJog2 = "par";
+  }
+
+  //Chama a funcao Display
+  const Jogador1 = document.getElementById("inputName1").value;
+  const Jogador2 = document.getElementById("inputName2").value;
+
+  console.log(Jogador1);
+  console.log(Jogador2);
+
+  console.log(name1.innerText);
+  console.log(name2.innerText);
+
+  /* Encontrando o vencedor */
+  if (opcFinal === opcJog1) {
+    nomeVencedor = "JOGADOR 1";
+  } else {
+    nomeVencedor = "JOGADOR 2";
+  }
+
+  /* Mostrando as informacoes de saida */
+  name1.innerText = Jogador1;
+  name2.innerText = Jogador2;
+  escolha1.innerText = opcJog1;
+  escolhaDedos1.innerText = qtdeDedosFirst;
+  escolha2.innerText = opcJog2;
+  escolhaDedos2.innerText = qtdeDedosSecond;
+  final.innerText = total;
+  escolha3.innerText = opcFinal;
+  vencedor.innerText = nomeVencedor;
 }
-
-// TO GET THE ELEMENT FROM DOM YOU CAN USE "getElementById"
-//let Jogador1 = document.getElementById("InputName1");
-
-//console.log(Jogador1); // <== what can you see in browser's console
-
-// TO ADD TEXT TO DOM USE "innerHTML"
-//jogador1.innerHTML = "I'm a dog";
-
-// set the HTML content of "otherElement" to "I'm a cat"
-//otherElement.innerHTML = theCatDiv.innerHTML;
-
-//capturando todos os elementos de html
-//const startScreen = document.getElementById("startScreen");
-//const inputName = document.getElementById("inputName");
-//const gameScreen = document.getElementById("gameScreen");
-//const gameScore = document.getElementById("gameScore");
-//const playerName = document.getElementById("name");
-//const board = document.getElementById("board");
-//const chances = 5;
-
-//adicionar o event listener do submit
-//addEventListener("submit", () => {
-//instanciar a minha classe
-//const game = new ParImparGame(inputName.value, chances);
-
-// startScreen desapareça
-//startScreen.classList.add("hide");
-
-// mostrar o gameScore
-//gameScore.className = "show";
-
-//game.renderDeck();
-
-//settingUpGame(game);;
-
-/*
-function settingUpGame(game) {
-  // capturar todas as cardsBack
-  // adicionar a ela um eventlistener
-  const allCardsBack = document.querySelectorAll(".cardBack");
-
-  allCardsBack.forEach((cardBack) =>
-    cardBack.addEventListener("click", (event) => game.flipCard(event))
-  );
-}
-*/

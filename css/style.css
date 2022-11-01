@@ -2,13 +2,9 @@
 
 .heroimage {
   background-image: url("../assets/par_impar.png");
-  height: 100vh;
-  /*width: 100vh; */
-  color: black;
-  display: flex;
-  justify-content: center;
+  color: whitesmoke;
   align-items: center;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .umdedoimage {
@@ -76,13 +72,14 @@
 
 .inicio {
   display: flex;
-  height: 65vh;
+  height: 50vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 3rem;
   padding-bottom: 40px;
   text-align: center;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
 }
 
 .resultScreen {
