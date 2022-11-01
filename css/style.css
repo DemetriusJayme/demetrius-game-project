@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .heroimage {
-  background-image: url("../images/par_impar.png");
+  background-image: url("../assets/par_impar.png");
   height: 100vh;
   /*width: 100vh; */
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 
 .umdedoimage {
-  background-image: url("../images/mao_um_dedo.png");
+  background-image: url("../assets/mao_um_dedo.png");
   height: 30vh;
   width: 20vh;
   color: white;
@@ -21,7 +22,7 @@
 }
 
 .doisdedosimage {
-  background-image: url("../images/mao_dois_dedos.png");
+  background-image: url("../assets/mao_dois_dedos.png");
   height: 30vh;
   width: 25vh;
   color: white;
@@ -31,7 +32,7 @@
 }
 
 .tresdedosimage {
-  background-image: url("../images/mao_tres_dedos.png");
+  background-image: url("../assets/mao_tres_dedos.png");
   height: 30vh;
   width: 25vh;
   color: white;
@@ -41,7 +42,7 @@
 }
 
 .quatrodedosimage {
-  background-image: url("../images/mao_quatro_dedos.png");
+  background-image: url("../assets/mao_quatro_dedos.png");
   height: 30vh;
   width: 25vh;
   color: white;
@@ -51,7 +52,7 @@
 }
 
 .cincodedosimage {
-  background-image: url("../images/mao_cinco_dedos.png");
+  background-image: url("../assets/mao_cinco_dedos.png");
   height: 30vh;
   width: 25vh;
   color: white;
@@ -84,7 +85,7 @@
   text-align: center;
 }
 
-.startScreen > div > form > fieldset {
+.resultScreen {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,21 +98,27 @@
   padding: 30px;
 }
 
-.resultScreen > div > form > fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-
-  border-radius: 18px;
-  background: #e0e0e0;
-  box-shadow: 8px 8px 5px #bebebe, -8px -8px 5px #ffffff;
-
-  padding: 30px;
+#inputName1 {
+  width: 25vw;
+  height: 1vw;
+  padding: 6px;
 }
 
-#inputName {
-  width: 50vw;
+#inputName2 {
+  width: 25vw;
+  height: 1vw;
+  padding: 6px;
+}
+
+#inputQtdeFirst {
+  width: 5vw;
+  height: 1vw;
+  padding: 6px;
+}
+
+#inputQtdeSecond {
+  width: 5vw;
+  height: 1vw;
   padding: 6px;
 }
 
@@ -129,14 +136,6 @@
   border: 0;
   background-color: rgb(53, 53, 53);
   color: red;
-}
-
-#btnStart:hover {
-  cursor: pointer;
-}
-
-fieldset {
-  border: none;
 }
 
 .selecionado {
