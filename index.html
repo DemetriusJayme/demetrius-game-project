@@ -1,4 +1,5 @@
 <html lang="en">
+  <!-- Cabecalho -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,45 +7,95 @@
     <!-- Linkando com o arquivo CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Titulo -->
     <title>PAR/IMPAR</title>
+    <div class="heroimage"></div>
   </head>
 
+  <!-- Corpo -->
   <body>
-    <div class="heroimage"></div>
-    <h1>Par ou Impar</h1>
-
-    <!-- A div com o id de "inicio" será mostrada quando o jogo for carregado -->
+    <!-- Form incial -->
     <div id="inicio" class="inicio">
-      <h1>Mostrar a imagem da mao com os dedos</h1>
-      <div class="umdedoimage"></div>
-      <div class="doisdedosimage"></div>
-      <div class="tresdedosimage"></div>
-      <div class="quatrodedosimage"></div>
-      <div class="doisdedosimage"></div>
+      <h1>Par ou Impar</h1>
+      <div></div>
       <div>
-        <label
-          >Player 1 - Digite a qtde de dedos (ou clique na figura desejada)
-        </label>
-        <input type="text1" />
-      </div>
-      <div>-</div>
-      <div>-</div>
-      <div>
-        <label
-          >Player 2 - Digite a qtde de dedos (ou clique na figura desejada)
-        </label>
-        <input type="text2" />
-      </div>
-      <div>-</div>
-      <div>-</div>
-      <div>
-        <center>
-          <button heigth="100px;" width="50px;" id="btnStart">Jogar!</button>
-        </center>
+        <form onsubmit="return false">
+          <fieldset>
+            <label>Digite o nome do JOGADOR 1:</label>
+            <input
+              type="text"
+              autocomplete="off"
+              required
+              autofocus
+              placeholder="Digite o nome do JOGADOR 1"
+              id="inputName1"
+            />
+            <div></div>
+            <label>Digite o nome do JOGADOR 2:</label>
+            <input
+              type="text"
+              autocomplete="off"
+              required
+              autofocus
+              placeholder="Digite o nome do JOGADOR 2"
+              id="inputName2"
+            />
+            <div></div>
+            <label
+              >O JOGADOR 1 deve informar a quantidade de dedos (Mostrar
+              imagens?):</label
+            >
+            <input
+              type="number"
+              autocomplete="off"
+              required
+              autofocus
+              placeholder="Digite uma quantidade de 1 a 5"
+              id="inputQtdeFirst"
+            />
+            <div>
+              <!-- Mostrar imagens dos dedos -->
+              <!-- <div class="umdedoimage"></div> -->
+              <!-- <div class="doisdedosimage"></div> -->
+              <!-- <div class="tresdedosimage"></div> -->
+              <!-- <div class="quatrodedosimage"></div> -->
+              <!-- <div class="doisdedosimage"></div> -->
+            </div>
+            <label
+              >O JOGADOR 2 deve informar a quantidade de dedos (Mostrar
+              imagens):</label
+            >
+            <input
+              type="number"
+              autocomplete="off"
+              required
+              autofocus
+              placeholder="Digite uma quantidade de 1 a 5"
+              id="inputQtdeSecond"
+            />
+            <div>
+              O JOGADOR 1 deve apertar o botao desejado (Par ou Impar):
+              <button type="submit" id="btnPar">Par!!!</button>
+              <button type="submit" id="btnImpar">Impar!!!</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </div>
 
+    <!-- Display Game -->
+    <article id="DisplayResultGame">
+      <section id="resultScreen">
+        <p>Olá, <span id="name">InputName1</span></p>
+        <p>Você tem <span id="points">xxx</span> tentativas!</p>
+      </section>
+
+      <div id="board" class="board"></div>
+    </article>
+
+    <!-- Exemplo DOM Link -- <div id="cat"></div> -->
+
     <!-- Linkando com o arquivo Java Script -->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

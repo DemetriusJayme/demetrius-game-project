@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 .heroimage {
   background-image: url("../images/par_impar.png");
-  height: 50vh;
-  /* width: 200vh; */
-  color: white;
+  height: 100vh;
+  /*width: 100vh; */
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +13,7 @@
 .umdedoimage {
   background-image: url("../images/mao_um_dedo.png");
   height: 30vh;
-  width: 25vh;
+  width: 20vh;
   color: white;
   display: flex;
   justify-content: center;
@@ -56,4 +58,103 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.inicio {
+  display: flex;
+  height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.startScreen > div > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 18px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 5px #bebebe, -8px -8px 5px #ffffff;
+
+  padding: 30px;
+}
+
+.resultScreen > div > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 18px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 5px #bebebe, -8px -8px 5px #ffffff;
+
+  padding: 30px;
+}
+
+#inputName {
+  width: 50vw;
+  padding: 6px;
+}
+
+#btnPar {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(53, 53, 53);
+  color: aqua;
+}
+
+#btnImpar {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(53, 53, 53);
+  color: red;
+}
+
+#btnStart:hover {
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+}
+
+.selecionado {
+  border: 10px solid blueviolet;
+  border-radius: 200px;
+}
+
+.turn {
+  border: 10px solid blue;
+  border-radius: 200px;
+}
+
+/* mostra o elemento html */
+.show {
+  display: block;
+}
+
+/* esconde o element html */
+.hide {
+  display: none !important;
 }
