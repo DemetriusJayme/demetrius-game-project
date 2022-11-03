@@ -43,10 +43,14 @@ function resultGame(flag) {
   }
 
   //Chama a funcao Display
-  const Jogador1 = document.getElementById("inputName1").value;
-  const Jogador2 = document.getElementById("inputName2").value;
+  //const Jogador1 = document.getElementById("inputName1").value;
+  //const Jogador2 = document.getElementById("inputName2").value;
 
+  //Jogador1 = ParImparGame.nomeJogador(1);
+
+  console.log("mostrar a chamada do metodo");
   console.log(Jogador1);
+
   console.log(Jogador2);
 
   console.log(name1.innerText);
@@ -56,7 +60,7 @@ function resultGame(flag) {
   if (opcFinal === opcJog1) {
     nomeVencedor = "JOGADOR 1";
   } else {
-    nomeVencedor = "JOGADOR 2";
+    nomeVencedor = "JOGADOR 2 DOIS";
   }
 
   /* Mostrando as informacoes de saida */

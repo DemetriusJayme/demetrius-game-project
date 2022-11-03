@@ -7,6 +7,10 @@
   opacity: 0.8;
 }
 
+.grupoimagens {
+  display: flex;
+}
+
 .umdedoimage {
   background-image: url("../assets/mao_um_dedo.png");
   height: 30vh;
