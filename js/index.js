@@ -3,15 +3,17 @@
 const parimpar = new ParImparGame();
 
 //Verifica a conexao com JS
-console.log("JS connected"); // <== just a quick check up to make sure js doc is connected properly
+console.log("JS connected");
 
+//Verifica se o botão PAR foi apertado
 btnPar.onclick = () => {
-  console.log("cliquei no botão par");
+  //console.log("cliquei no botão par");
   resultGame("par");
 };
 
+//Verifica se o botão IMPAR foi apertado
 btnImpar.onclick = () => {
-  console.log("cliquei no botão impar");
+  //console.log("cliquei no botão impar");
   resultGame("impar");
 };
 
@@ -28,10 +30,10 @@ function resultGame(flag) {
 
   //Verifica se e par ou impar
   if (total % 2 == 0) {
-    console.log("eh par");
+    //console.log("eh par");
     opcFinal = "par";
   } else {
-    console.log("eh impar");
+    //console.log("eh impar");
     opcFinal = "impar";
   }
 
@@ -46,17 +48,18 @@ function resultGame(flag) {
 
   //Chama a funcao Display
   //const Jogador1 = document.getElementById("inputName1").value;
-  const Jogador2 = document.getElementById("inputName2").value;
+  //const Jogador2 = document.getElementById("inputName2").value;
 
   const Jogador1 = parimpar.nomeJogador(1);
+  const Jogador2 = parimpar.nomeJogador(2);
 
-  console.log("mostrar a chamada do metodo");
-  console.log(Jogador1);
+  //console.log("mostrar a chamada do metodo");
+  //console.log(Jogador1);
 
-  console.log(Jogador2);
+  //console.log(Jogador2);
 
-  console.log(name1.innerText);
-  console.log(name2.innerText);
+  //console.log(name1.innerText);
+  //console.log(name2.innerText);
 
   /* Encontrando o vencedor */
   if (opcFinal === opcJog1) {
