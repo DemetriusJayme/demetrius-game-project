@@ -1,5 +1,7 @@
 // index.js
 
+const parimpar = new ParImparGame();
+
 //Verifica a conexao com JS
 console.log("JS connected"); // <== just a quick check up to make sure js doc is connected properly
 
@@ -44,9 +46,9 @@ function resultGame(flag) {
 
   //Chama a funcao Display
   //const Jogador1 = document.getElementById("inputName1").value;
-  //const Jogador2 = document.getElementById("inputName2").value;
+  const Jogador2 = document.getElementById("inputName2").value;
 
-  //Jogador1 = ParImparGame.nomeJogador(1);
+  const Jogador1 = parimpar.nomeJogador(1);
 
   console.log("mostrar a chamada do metodo");
   console.log(Jogador1);
